@@ -11,9 +11,6 @@ const LatestCollection = () => {
     useEffect(() =>{
       setLatestProducts(products.slice(0,10));
     },[])
-    // useEffect(() =>{
-    //   setLatestProducts(products.slice(0,10));
-    // },[])
 
 
 
@@ -31,6 +28,8 @@ const LatestCollection = () => {
       latestProducts.map((item,index) =>(
           <ProductsItem key={index} id={item._id} image={item.image} name={item.name} price={item.price} />
       ))
+
+      
      }
     </div>
   </div>
